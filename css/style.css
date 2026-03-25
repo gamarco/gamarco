@@ -1,11 +1,9 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BASE */
 body {
     font-family: 'Poppins', sans-serif;
     color: #1f2937;
@@ -42,7 +40,7 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(15, 23, 42, 0.7); /* escurece o vídeo */
+  background: rgba(15, 23, 42, 0.7);
   z-index: 1;
 }
 
@@ -79,7 +77,6 @@ section {
   font-size: 4rem;
 }
 
-/* SOBRE */
 .about p {
     margin: 20px 0;
 }
@@ -98,7 +95,6 @@ section {
     border-left: 4px solid #0f172a;
 }
 
-/* SERVIÇOS */
 .services h2 {
     margin-bottom: 40px;
 }
@@ -135,13 +131,12 @@ section {
     background: #e2e8f0;
 }
 
-/* CONTEÚDO (MAIOR E MAIS DESTACADO) */
 .panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
 
-    padding: 0 15px; /* lateral sempre */
+    padding: 0 15px;
 
     background: #f8fafc;
     border-left: 3px solid #0f172a;
@@ -151,7 +146,6 @@ section {
     color: #0f172a;
 }
 
-/* EQUIPE */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -193,7 +187,6 @@ section {
     font-size: 14px;
 }
 
-/* CONTATO */
 .contact p {
     margin-top: 10px;
     font-size: 18px;
@@ -223,7 +216,6 @@ section {
   font-size: 0.9rem;
 }
 
-/* ANIMAÇÃO */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
