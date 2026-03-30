@@ -146,14 +146,14 @@ section {
     color: #0f172a;
 }
 
-.team-grid {
+.team-grid, .workflow-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
 
-.team-member {
+.team-member, .workflow-item {
     text-align: center;
     padding: 20px;
     border-radius: 12px;
@@ -168,7 +168,7 @@ section {
     background: #f9fafb;
 }
 
-.team-member img {
+.team-member img, .workflow-item img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -229,4 +229,82 @@ section {
 
 h4 {
     margin-bottom: 10px;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    background: #05070d; /* quase preto com azul */
+}
+
+/* Camada animada */
+.bg-animation {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Camadas com gradientes animados */
+.bg-animation::before,
+.bg-animation::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 102, 255, 0.25), transparent 60%),
+                radial-gradient(circle at 70% 60%, rgba(0, 180, 255, 0.2), transparent 60%),
+                radial-gradient(circle at 50% 80%, rgba(0, 70, 200, 0.2), transparent 70%);
+    animation: moveBackground 20s linear infinite;
+}
+
+/* Segunda camada com movimento diferente */
+.bg-animation::after {
+    background: radial-gradient(circle at 60% 40%, rgba(0, 120, 255, 0.15), transparent 60%),
+                radial-gradient(circle at 40% 70%, rgba(0, 200, 255, 0.15), transparent 65%);
+    animation: moveBackgroundReverse 30s linear infinite;
+}
+
+/* Movimento suave */
+@keyframes moveBackground {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(10%, 10%) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+@keyframes moveBackgroundReverse {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-10%, -10%) rotate(-180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(-360deg);
+    }
+}
+
+/* Overlay (mantém contraste do texto) */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 7, 13, 0.6);
+    z-index: 1;
+}
+
+/* Conteúdo acima de tudo */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
 }
