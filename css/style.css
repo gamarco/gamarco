@@ -311,6 +311,7 @@ h4 {
 
 .tooltip {
     position: relative;
+    display: inline-block;
     cursor: pointer;
 }
 
@@ -338,23 +339,41 @@ h4 {
 .tooltip-text {
     visibility: hidden;
     opacity: 0;
-    width: 220px;
+
+    font-size: small;
+
+    line-height: 1;
+
+    width: 125px;
+    max-width: 90vw;
+
     background-color: #333;
     color: #fff;
     text-align: left;
     padding: 8px;
     border-radius: 6px;
-    font-size: small;
 
     position: absolute;
     bottom: 125%;
-    left: 0;
+    left: 10%;
+    transform: translateX(-50%);
+
     z-index: 1;
 
     transition: opacity 0.3s;
+
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .tooltip-text {
+    bottom: auto;
+    top: 125%;
+  }
 }
