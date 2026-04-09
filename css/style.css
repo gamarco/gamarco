@@ -308,3 +308,53 @@ h4 {
     text-align: center;
     color: #fff;
 }
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.highlight {
+    color: #0070C0;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: #0070C0;
+    color: white;
+    font-weight: bold;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 220px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: small;
+
+    position: absolute;
+    bottom: 125%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
