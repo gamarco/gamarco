@@ -1,0 +1,68 @@
+<section id="contato" class="section" style="margin-top: 20px;">
+    <h2>Contato</h2>
+
+    <div class="contato-wrapper">
+
+        <form class="contact-form" id="formContato">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <i class="bi bi-person"></i>
+                    <input type="text" id="nome" placeholder=" " required>
+                    <label>Nome completo</label>
+                </div>
+
+                <div class="form-group">
+                    <i class="bi bi-building"></i>
+                    <input type="text" id="empresa" placeholder=" " required>
+                    <label>Organização / Empresa</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" id="email" placeholder=" " required>
+                    <label>E-mail</label>
+                </div>
+
+                <div class="form-group">
+                    <i class="bi bi-telephone"></i>
+                    <input type="tel" id="telefone" placeholder=" " required>
+                    <label>Telefone</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group autocomplete">
+                    <i class="bi bi-geo-alt"></i>
+                    <input type="text" id="estado" placeholder=" " required>
+                    <label>Estado</label>
+                    <div id="estado-list" class="autocomplete-list"></div>
+                </div>
+
+                <div class="form-group autocomplete">
+                    <i class="bi bi-geo"></i>
+                    <input type="text" id="cidade" placeholder=" " required>
+                    <label>Cidade</label>
+                    <div id="cidade-list" class="autocomplete-list"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <i class="bi bi-chat-dots"></i>
+                <input type="text" id="assunto" placeholder=" ">
+                <label>Assunto</label>
+            </div>
+
+            <div class="form-group textarea">
+                <i class="bi bi-pencil-square"></i>
+                <textarea id="mensagem" placeholder=" " rows="4" required></textarea>
+                <label>Mensagem</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+</section>

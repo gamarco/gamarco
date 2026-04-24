@@ -1,0 +1,218 @@
+[
+  {
+    "categoria": "Consultoria Administrativa",
+    "descricao": "",
+    "servicos": [
+      {
+        "titulo": "Planejamento estratégico institucional",
+        "imagem": "assets/images/services/consultoria_administrativa/img_1.png",
+        "descricao": "Elaboração de planos estratégicos alinhados ao Plano Municipal de Educação (PME); definição de cargos, de funções, de atribuições, de objetivos e de metas; construção de indicadores de desempenho; apoio à governança educacional e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Gestão de processos e de normativas",
+        "imagem": "assets/images/services/consultoria_administrativa/img_2.png",
+        "descricao": "Mapeamento e padronização de processos administrativos; adequação às legislações educacionais (LDBEN/1996, portarias, normas, ofícios e notas técnicas federais, estaduais e municipais); elaboração de fluxos e manuais internos para a operacionalização de procedimentos e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Gestão de dados e de sistemas",
+        "imagem": "assets/images/services/consultoria_administrativa/img_3.png",
+        "descricao": "Utilização de sistemas como Censo Escolar (Educacenso), Sistema Integrado de Monitoramento Execução e Controle (SIMEC), Sistema de Informações sobre Orçamentos Públicos em Educação (SIOPE) e outros, bem como plataformas do Ministério da Educação (MEC) e do Fundo Nacional de Desenvolvimento da Educação (FNDE); organização e análise de dados educacionais; apoio à tomada de decisão baseada em evidências e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Organização administrativa da rede de ensino",
+        "imagem": "assets/images/services/consultoria_administrativa/img_4.png",
+        "descricao": "Estruturação de organogramas e de fluxogramas; definição de atribuições para andamento dos fluxos; otimização de rotinas administrativas; apoio à gestão descentralizada e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação administrativa para gestores públicos",
+        "imagem": "assets/images/services/consultoria_administrativa/img_5.png",
+        "descricao": "Capacitação em gestão pública administrativa educacional; adesão ao programa Gestão Presente na Escola (GPE); formação em liderança, em planejamento e em processamento e utilização de dados; desenvolvimento de competências administrativas voltadas à gestão pública administrativa educacional e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Consultoria Financeira",
+    "descricao": "",
+    "servicos": [
+      {
+        "titulo": "Planejamento financeiro da rede de ensino",
+        "imagem": "assets/images/services/consultoria_financeira/img_1.png",
+        "descricao": "Elaboração de planejamento orçamentário; alinhamento ao Plano Plurianual (PPA), à Lei de Diretrizes Orçamentárias (LDO) e à Lei Orçamentária Anual (LOA); definição de prioridades de investimento educacional; estruturação de ações e de projetos para captação de recursos e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Gestão e captação de recursos do Fundeb",
+        "imagem": "assets/images/services/consultoria_financeira/img_2.png",
+        "descricao": "Orientação sobre uso dos recursos do Fundo Nacional de Desenvolvimento da Educação Básica e de Valorização dos Profissionais do Magistério (FUNDEB); Valor Aluno Ano (VAAF) e fatores de ponderação; complementação Valor Aluno Ano Total (VAAT); complementação Valor Aluno Ano Resultado (VAAR) e condicionalidades para recebimento; acompanhamento da aplicação mínima dos recursos destinados à educação; apoio na distribuição e no controle dos recursos, e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Gestão e captação de recursos do FNDE",
+        "imagem": "assets/images/services/consultoria_financeira/img_3.png",
+        "descricao": "Apoio para a adesão e a execução de programas do Fundo Nacional de Desenvolvimento da Educação (FNDE), como Programa Dinheiro Direto na Escola (PDDE), Programa Nacional do Livro e do Material Didático (PNLD), Programa Nacional de Alimentação Escolar (PNAE), Pograma Nacional de Apoio ao Transporte Escolar (PNATE), Novo PAR (Programa de Ações Articuladas) e outros programas do Fundo; acompanhamento de repasses e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Gestão e captação de recursos de outras fontes",
+        "imagem": "assets/images/services/consultoria_financeira/img_4.png",
+        "descricao": "Identificação de editais e de parcerias com empresas públicas e privadas; elaboração de projetos em Rede; articulação com instituições públicas e privadas; prospecção de empresas para apadrinhamento de escolas da Rede de Ensino e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Prestação e gestão de contas</br> educacionais",
+        "imagem": "assets/images/services/consultoria_financeira/img_5.png",
+        "descricao": "Organização de documentos e de contratos; elaboração de relatórios analíticos e sintéticos; cumprimento de exigências legais e dos órgãos de controle; apoio na utilização do Sistema de Gestão de Prestação de Contas (SiGPC) e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação financeira para gestores públicos",
+        "imagem": "assets/images/services/consultoria_financeira/img_6.png",
+        "descricao": "Capacitação em gestão pública financeira educacional e em execução orçamentária; captação de recursos para a Rede de Ensino; utilização de sistemas financeiros; gestão estratética de recursos públicos e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Consultoria Pedagógica",
+    "descricao": "",
+    "servicos": [
+      {
+        "titulo": "Avaliação da implementação de referenciais curriculares",
+        "imagem": "assets/images/services/consultoria_pedagogica/img_1.png",
+        "descricao": "Acompanhamento e avaliação da implementação do Currículo Referência (CR) do estado (ou do município) e da Base Nacional Comum Curricular para a Computação (BNCC-Computação); elaboração e implementação de currículo municipal e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Planejamento, avaliação e recomposição das aprendizagens",
+        "imagem": "assets/images/services/consultoria_pedagogica/img_2.png",
+        "descricao": "Elaboração de planejamentos alinhados ao Curículo Referência (CR) do estado; construção de instrumentos avaliativos diagnósticos, formativos e somativos; análise de defasagens considerando os critérios de condicionalidade para recebimento de recursos da Complementação VAAR-FUNDEB; desenvolvimento de estratégias para a recomposição das aprendizagens e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Acompanhamento de indicadores educacionais",
+        "imagem": "assets/images/services/consultoria_pedagogica/img_3.png",
+        "descricao": "Acompanhamento do Índice de Desenvolvimento da Educação Básica (IDEB) da Rede de Ensino e de suas organizações escolares, como taxas de aprovação, de evasão e de distorção idade-série; análise de resultados do Índice para tomada de decisões; definição e acompanhamento de metas para melhoria do Índice e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Análise de avaliações externas (Simave, SAEB e outras)",
+        "imagem": "assets/images/services/consultoria_pedagogica/img_4.png",
+        "descricao": "Análise dos resultados da Rede de Ensino e de suas organizações escolares no Sistema Mineiro de Avaliação e Equidade da Educação Pública (Simave) e do Sistema de Avaliação da Educação Básica (SAEB); identificação de habilidades-alvo à luz da matriz de referência do SAEB; elaboração de planos de intervenção; formação de equipes para a compreenção dos dados e para a tomada de decisões pedagógicas e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Educação Especial e Atendimento Educacional Especializado",
+        "imagem": "assets/images/services/consultoria_pedagogica/img_5.png",
+        "descricao": "Orientação sobre a Lei nº 13.146, de 6 de julho de 2015, que institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência); o Decreto 12.686, de 20 de outubro de 2025, que institui a Política Nacional de Educação Especial Inclusiva e a Rede Nacional de Educação Especial Inclusiva; gestão e organização do Atendimento Educacional Especializado (AEE) na escola em tempo parcial e na Escola em Tempo Integral (ETI); orientações pedagógicas para a Educação Especial e para o AEE (MEC, INEP, CNE, etc.); adaptações curriculares para a Educação Especial; formação de profissionais para o atendimento a estudantes público-alvo da Educação Especial; implementação e ampliação de salas para o AEE e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Planejamento, gestão e acompanhamento de planos e projetos escolares",
+        "imagem": "assets/images/services/consultoria_pedagogica/img_6.png",
+        "descricao": "Elaboração e acompanhamento de projetos pedagógicos das organizações escolares da Rede de Ensino; apoio à construção e à execução do Projeto Político-Pedagógico (PPP), do Plano de Desenvolvimento Institucional (PDI), do Plano de Autoavaliação Institucional (PAI), do Plano de Convivência Escolar (PCE) e de outros documentos organizacionais; alinhamento às metas da Rede de Ensino; acompanhamento de resultados das organizações escolares e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação pedagógica para gestores públicos",
+        "imagem": "assets/images/services/consultoria_pedagogica/img_7.png",
+        "descricao": "Capacitação em gestão pública pedagógica educacional; capacitação em gestão e em liderança pedagógica; utilização de dados de dados educacionais; acompanhamento do trabalho docente; desenvolvimento de práticas de gestão voltadas à aprendizagem e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Planejamento e Elaboração de Políticas Educacionais",
+    "descricao": "",
+    "servicos": [
+      {
+        "titulo": "Diagnóstico da Rede Municipal de Educação e das organizações escolares",
+        "imagem": "assets/images/services/planejamento_e_elaboracao_de_politicas_educacionais/img_1.png",
+        "descricao": "Levantamento e análise de dados educacionais (matrículas, desempenho, fluxo escolar, infraestrutura, educação especial, AEE, ETI, etc.), internos e externos à Rede de Ensino (Simave, SAEB, Siope, Educacenso, documentos orientadores da Rede, etc.); identificação de fragilidades e de potencialidades da Rede de Ensino à luz de outras experiências municipais, estaduais e nacionais; elaboração de relatórios e de pareceres técnicos para subsidiar a tomada de decisões administrativas, financeiras, pedagógicas ou organizacionais e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Planejamento e implementação do Plano Municipal de Educação",
+        "imagem": "assets/images/services/planejamento_e_elaboracao_de_politicas_educacionais/img_2.png",
+        "descricao": "Elaboração ou revisão do Plano Municipal de Educação (PME) alinhado ao Plano Estadual de Educação (PEE) e ao Plano Nacional de Educação (PNE); definição de metas e de estratégias do PME; apoio na institucionalização do Plano; acompanhamento da execução e monitoramento de indicadores; estudo comparado e elaboração de relatórios e de pareceres técnicos sobre o Plano e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Planejamento e implementação do Currículo Referência",
+        "imagem": "assets/images/services/planejamento_e_elaboracao_de_politicas_educacionais/img_3.png",
+        "descricao": "Apoio na implementação do Currículo Referência (CR) do estado ou na elaboração do referencial curricular do município; adaptações currículares alinhadas à realidade da Rede de Ensino; formação de equipes para o acompanhamento e para a avaliação do currículo e da BNCC-Computação; identificação  formação de grupos de gestores públicos para o desenvolvimento de estratégias de formação continuada sobre os referenciais curriculares para os profissionais da educação da Rede de Ensino, e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Planejamento e acompanhamento de metas educacionais",
+        "imagem": "assets/images/services/planejamento_e_elaboracao_de_politicas_educacionais/img_4.png",
+        "descricao": "Definição de metas de curto, médio e longo prazo; construção de indicadores; acompanhamento sistemático de resultados; proposição de ajustes estratégicos; acompanhamento de indicadores de gestão educacional, de formação de professores e dos profissionais de serviço e de apoio escolar, de práticas pedagógicas e de avaliação da aprendiagem, e de infraestrutura física e de recursos pedagógicos, e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Apoio ao Novo Plano de Ações Articuladas (PAR)",
+        "imagem": "assets/images/services/planejamento_e_elaboracao_de_politicas_educacionais/img_5.png",
+        "descricao": "Orientação para a elaboração, a execução e o monitoramento do Programa de Ações Articuladas (PAR) em suas três etapas (preparatório e diagnóstica, planejamento e análise técnica, e implementação); uso do sistema SIMEC; alinhamento às políticas e programas do MEC, e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Acompanhamento de políticas educacionais",
+        "imagem": "assets/images/services/planejamento_e_elaboracao_de_politicas_educacionais/img_6.png",
+        "descricao": "Monitoramento da implementação de políticas públicas educacionais no âmbito da Rede de Ensino; avaliação de resultados e de impactos; elaboração de relatórios e de pareceres técnicos por meio de estudo comparado com outras realidades educacionais municipais, estaduais e federais; apoio na tomada de decisão e no replanejamento, e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação em políticas educacionais para gestores públicos",
+        "imagem": "assets/images/services/planejamento_e_elaboracao_de_politicas_educacionais/img_7.png",
+        "descricao": "Capacitação em gestão pública voltada ao planejamento e à elaboração de políticas educacionais; referenciais curriculares e outras experiências municipais, estaduais e nacionais; elaboração de diretrizes, de metas e de indicadores para a educação; monitoramento das matrículas da educação especial e do AEE, e outras atividades identificadas durante a fase de diagnóstico e/ou demandadas pela gestão pública municipal.",
+        "descricao_curta": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Formação para Profissionais da Educação",
+    "descricao": "",
+    "servicos": [
+      {
+        "titulo": "Formação para gestores escolares",
+        "imagem": "assets/images/services/formacao_para_profissionais_da_educacao/img_1.png",
+        "descricao": "Desenvolvimento de competências em liderança, em gestão estratégica e em tomada de decisão voltadas às dimensões administrativa, financeira, pedagógica, organizacional e interpessoal, e outras ações identificadas ou demandas no contexto da Rede de Ensino.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação para coordenadores escolares",
+        "imagem": "assets/images/services/formacao_para_profissionais_da_educacao/img_2.png",
+        "descricao": "Capacitação em acompanhamento pedagógico e monitoramento das aprendizagens; orientação e apoio ao professor; planejamento didático-pedagógico e outras ações identificadas ou demandas no contexto da Rede de Ensino.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação para professores",
+        "imagem": "assets/images/services/formacao_para_profissionais_da_educacao/img_3.png",
+        "descricao": "Práticas pedagógicas alinhadas ao Currículo Referência (CR) do estado; técnicas de ensino e metodologias ativas de aprendizagem; avaliação da aprendizagem (diagnósica, formativa, somativa e portfólio) e outras ações identificadas ou demandas no contexto da Rede de Ensino.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação para monitores escolares",
+        "imagem": "assets/images/services/formacao_para_profissionais_da_educacao/img_4.png",
+        "descricao": "Capacitação sobre o papel do monitor na escola e na sala de aula; apoio à mediação da aprendizagem; estratégias de acompanhamento dos estudantes; noções de inclusão e de apoio aos estudantes com necessidades específicas; desenvolvimento de habilidades socioemocionais; orientação sobre ética, sobre comunicação e sobre trabalho em equipe escolar, e outras ações identificadas ou demandas no contexto da Rede de Ensino.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação para secretários escolares",
+        "imagem": "assets/images/services/formacao_para_profissionais_da_educacao/img_5.png",
+        "descricao": "Gestão documental; utilização de sistemas educacionais; acompanhamento do Censo Escolar; organização documentação da vida escolar dos estudantes e outras ações identificadas ou demandas no contexto da Rede de Ensino.",
+        "descricao_curta": ""
+      },
+      {
+        "titulo": "Formação para as aprendizagens",
+        "imagem": "assets/images/services/formacao_para_profissionais_da_educacao/img_6.png",
+        "descricao": "Construção de instrumentos de avaliação; elaboração de itens avaliativos; avaliação diagnóstica, formativa, somativa e portfólio; análise de resultados de avaliações objetivas e discursivas; utilização dos resultados para intervenção no processo ensino-aprendizagem.",
+        "descricao_curta": ""
+      }
+    ]
+  }
+]
