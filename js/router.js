@@ -29,6 +29,7 @@ export async function router() {
     const footer = document.querySelector("footer");
 
     if (path === "/" || path === "/inicio") {
+        document.title = "Gamarco | Consultoria Educacional para Gestão Pública";
         footer.style.display = "none";
         initHeroAnimation();
     } else {
@@ -46,18 +47,22 @@ export async function router() {
     }
 
     if (path === "/contato") {
+        document.title = "Contato | Gamarco";
         initContactForm();
     }
 
     if (path === "/solucoes") {
+        document.title = "Soluções em Gestão Educacional | Gamarco";
         initServicesPage();
     }
 
     if (path === "/gamarco") {
+        document.title = "Sobre | Gamarco";
         initSobrePage();
     }
 
     if (path === "/equipe") {
+        document.title = "Equipe | Gamarco";
         initEquipePage();
     }
 

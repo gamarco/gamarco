@@ -1,5 +1,8 @@
 const frases = [
     {
+        titulo: "Consultoria que forma, transforma e gera resultados",
+    },
+    {
         titulo: "Gestão educacional baseada em evidências",
         texto: "Soluções estratégicas para resultados reais, consistentes e socialmente relevantes"
     },
