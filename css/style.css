@@ -1148,13 +1148,21 @@ footer {
     }
 
     .info-icon::after {
-        left: auto;
-        right: 0;
-        transform: none;
-        width: 220px;
-        max-width: calc(100vw - 40px);
-        bottom: 140%;
-        font-size: 0.72rem;
+        position: fixed;
+        left: 50%;
+        right: auto;
+        bottom: 24px;
+        transform: translateX(-50%);
+
+        width: calc(100vw - 40px);
+        max-width: 320px;
+
+        padding: 12px 14px;
+        font-size: 0.78rem;
+        line-height: 1.45;
+        text-align: center;
+
+        z-index: 99999;
     }
 }
 
