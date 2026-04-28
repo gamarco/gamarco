@@ -1,18 +1,32 @@
 const fs = require("fs");
+const path = require("path");
+const matter = require("gray-matter");
 
 const BASE_URL = "https://www.gamarco.com.br";
 
-const routes = [
+const fixedRoutes = [
     "/",
     "/inicio",
     "/gamarco",
     "/equipe",
     "/solucoes",
     "/aprenda",
-    "/contato",
-    "/dupla-matricula-aee",
-    "/fundeb"
+    "/contato"
 ];
+
+const mdDir = path.join(__dirname, "..", "conteudos-md");
+
+const contentRoutes = fs
+    .readdirSync(mdDir)
+    .filter(file => file.endsWith(".md"))
+    .map(file => {
+        const raw = fs.readFileSync(path.join(mdDir, file), "utf8");
+        const { data } = matter(raw);
+        return data.slug ? `/${data.slug}` : null;
+    })
+    .filter(Boolean);
+
+const routes = [...fixedRoutes, ...contentRoutes];
 
 const today = new Date().toISOString().split("T")[0];
 

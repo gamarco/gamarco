@@ -74,7 +74,7 @@ export async function initAprendaPage() {
                     <span>${post.categoria}</span>
                     <h3>${post.titulo}</h3>
                     <p>${post.subtitulo}</p>
-                    <a href="${post.link}" data-link>Ler conteúdo</a>
+                    <a href="${post.link}">Ler conteúdo</a>
                 </div>
             `;
 

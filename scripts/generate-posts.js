@@ -4,10 +4,41 @@ const matter = require("gray-matter");
 const { marked } = require("marked");
 
 const inputDir = path.join(__dirname, "..", "conteudos-md");
-const outputDir = path.join(__dirname, "..", "pages", "conteudos");
+const partialOutputDir = path.join(__dirname, "..", "pages", "conteudos");
+const templatesDir = path.join(__dirname, "..", "templates");
 
-if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
+const headTemplate = fs.readFileSync(path.join(templatesDir, "head.html"), "utf8");
+const headerTemplate = fs.readFileSync(path.join(templatesDir, "header.html"), "utf8");
+const footerTemplate = fs.readFileSync(path.join(templatesDir, "footer.html"), "utf8");
+const pageTemplate = fs.readFileSync(path.join(templatesDir, "page.html"), "utf8");
+
+if (!fs.existsSync(partialOutputDir)) {
+    fs.mkdirSync(partialOutputDir, { recursive: true });
+}
+
+function escapeHtml(text = "") {
+    return String(text)
+        .replaceAll("&", "&amp;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+}
+
+function replaceTemplate(template, values) {
+    let output = template;
+
+    Object.entries(values).forEach(([key, value]) => {
+        output = output.replaceAll(`{{${key}}}`, value ?? "");
+    });
+
+    return output;
+}
+
+function normalizeRootPath(value) {
+    if (!value) return "";
+    if (value.startsWith("http")) return value;
+    if (value.startsWith("/")) return value;
+    return "/" + value;
 }
 
 function renderVideoBlock(block) {
@@ -27,9 +58,7 @@ function renderVideoBlock(block) {
         </iframe>
     </div>
 
-    <blockquote>
-        ${citacao}
-    </blockquote>
+    <blockquote>${citacao}</blockquote>
 </div>`;
 }
 
@@ -50,7 +79,7 @@ function processCustomInline(content) {
     content = content.replace(/<quote>(.*?)<\/quote>/g, '<span class="artigo-quote">$1</span>');
 
     content = content.replace(/<ref>([\s\S]*?)<\/ref>/g, (_, ref) => {
-        return `<p class="artigo-reference" style="text-decoration: none; color: #0f1147">${marked.parseInline(ref.trim())}</p>`;
+        return `<p class="artigo-reference">${marked.parseInline(ref.trim())}</p>`;
     });
 
     return content;
@@ -65,7 +94,7 @@ function restoreVideoBlocks(html, videos) {
     return html;
 }
 
-function buildArticleHtml(data, bodyHtml) {
+function buildArticlePartial(data, bodyHtml) {
     const tags = Array.isArray(data.tags) ? data.tags : [];
 
     return `<section id="${data.slug}" class="section artigo-section">
@@ -75,9 +104,8 @@ function buildArticleHtml(data, bodyHtml) {
         <div class="artigo-header">
             <span class="artigo-categoria">${data.categoria}</span>
             <h1>${data.titulo}</h1>
-            <p class="artigo-subtitulo">
-                ${data.subtitulo}
-            </p>
+            <p class="artigo-subtitulo">${data.subtitulo}</p>
+
             <div class="artigo-meta">
                 <span>Por ${data.autor}</span>
                 <span>Publicado em ${data.data}</span>
@@ -106,6 +134,34 @@ function buildArticleHtml(data, bodyHtml) {
 </section>`;
 }
 
+function buildHead(data) {
+    const description = escapeHtml(data.subtitulo || "Conteúdo técnico da Gamarco Educacional.");
+    const image = normalizeRootPath(data.capa);
+    const url = `https://www.gamarco.com.br/${data.slug}`;
+
+    return replaceTemplate(headTemplate, {
+        title: `${escapeHtml(data.titulo)} | Gamarco`,
+        description,
+        canonical: url,
+        og_title: escapeHtml(data.titulo),
+        og_description: description,
+        og_image: `https://www.gamarco.com.br${image}`,
+        og_url: url,
+        og_type: "article"
+    });
+}
+
+function buildFullPage(data, partialHtml) {
+    const head = buildHead(data);
+
+    return replaceTemplate(pageTemplate, {
+        head,
+        header: headerTemplate,
+        content: partialHtml,
+        footer: footerTemplate
+    });
+}
+
 const files = fs.readdirSync(inputDir).filter(file => file.endsWith(".md"));
 
 files.forEach(file => {
@@ -120,18 +176,27 @@ files.forEach(file => {
     }
 
     const { content: contentWithPlaceholders, videos } = extractVideoBlocks(content);
-
     const processedContent = processCustomInline(contentWithPlaceholders);
 
     let bodyHtml = marked(processedContent);
-
     bodyHtml = restoreVideoBlocks(bodyHtml, videos);
 
-    const finalHtml = buildArticleHtml(data, bodyHtml);
+    const partialHtml = buildArticlePartial(data, bodyHtml);
 
-    const outputPath = path.join(outputDir, `${data.slug}.html`);
+    const partialOutputPath = path.join(partialOutputDir, `${data.slug}.html`);
+    fs.writeFileSync(partialOutputPath, partialHtml, "utf8");
 
-    fs.writeFileSync(outputPath, finalHtml, "utf8");
+    const realPageDir = path.join(__dirname, "..", data.slug);
+
+    if (!fs.existsSync(realPageDir)) {
+        fs.mkdirSync(realPageDir, { recursive: true });
+    }
+
+    const fullHtml = buildFullPage(data, partialHtml);
+    const realOutputPath = path.join(realPageDir, "index.html");
+
+    fs.writeFileSync(realOutputPath, fullHtml, "utf8");
 
     console.log(`Gerado: pages/conteudos/${data.slug}.html`);
+    console.log(`Gerado: ${data.slug}/index.html`);
 });
