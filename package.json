@@ -1,0 +1,27 @@
+{
+  "name": "site_gamarco_oficial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "posts": "node scripts/generate-posts.js",
+    "sitemap": "node scripts/generate-sitemap.js",
+    "build": "npm run posts && npm run sitemap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamarco/gamarco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gamarco/gamarco/issues"
+  },
+  "homepage": "https://github.com/gamarco/gamarco#readme",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.2"
+  }
+}
