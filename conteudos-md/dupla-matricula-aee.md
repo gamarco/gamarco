@@ -54,17 +54,17 @@ Objetivamente, os parágrafos 7º (artigo 11) e 2º (artigo 14) do Decreto 12.68
 ## Referências
 
 <ref>
-BRASIL. <mark>Decreto 12.686, de 20 de outubro de 2025</mark>. Institui a Política Nacional de Educação Especial Inclusiva e a Rede Nacional de Educação Especial Inclusiva. Brasília, DF: Presidência da República, 2025. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12686.htm. Acesso em: 28 abr. 2026.
+BRASIL. <mark>Decreto 12.686, de 20 de outubro de 2025</mark>. Institui a Política Nacional de Educação Especial Inclusiva e a Rede Nacional de Educação Especial Inclusiva. Brasília, DF: Presidência da República, 2025. Disponível em: [https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12686.htm](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12686.htm). Acesso em: 28 abr. 2026.
 </ref>
 
 <ref>
-BRASIL. <mark>Lei 13.146, de 6 de julho de 2015</mark>. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Brasília, DF: Presidência da República, 2015. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm. Acesso em: 28 abr. 2026.
+BRASIL. <mark>Lei 13.146, de 6 de julho de 2015</mark>. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Brasília, DF: Presidência da República, 2015. Disponível em: [https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm). Acesso em: 28 abr. 2026.
 </ref>
 
 <ref>
-BRASIL. <mark>Lei nº 14.113, de 25 de dezembro de 2020</mark>. Regulamenta o Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação (Fundeb), de que trata o art. 212-A da Constituição Federal; revoga dispositivos da Lei nº 11.494, de 20 de junho de 2007; e dá outras providências. Brasília, DF: Presidência da República, 2020. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm. Acesso em: 27 abr. 2026.
+BRASIL. <mark>Lei nº 14.113, de 25 de dezembro de 2020</mark>. Regulamenta o Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação (Fundeb), de que trata o art. 212-A da Constituição Federal; revoga dispositivos da Lei nº 11.494, de 20 de junho de 2007; e dá outras providências. Brasília, DF: Presidência da República, 2020. Disponível em: [https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm). Acesso em: 27 abr. 2026.
 </ref>
 
 <ref>
-BRASIL. Ministério da Educação. Conselho Nacional de Educação. Câmara de Educação Básica. <mark>Resolução CNE/CEB nº 4, de 2 de outubro de 2009</mark>. Institui Diretrizes Operacionais para o Atendimento Educacional Especializado na Educação Básica, modalidade Educação Especial. Brasília, DF: MEC/CNE/CEB, 2009. Disponível em: https://www.gov.br/mec/pt-br/cne/pdf/resolucoes-do-cne/ceb/2009/rceb004_09.pdf. Acesso em: 28 abr. 2026.
+BRASIL. Ministério da Educação. Conselho Nacional de Educação. Câmara de Educação Básica. <mark>Resolução CNE/CEB nº 4, de 2 de outubro de 2009</mark>. Institui Diretrizes Operacionais para o Atendimento Educacional Especializado na Educação Básica, modalidade Educação Especial. Brasília, DF: MEC/CNE/CEB, 2009. Disponível em: [https://www.gov.br/mec/pt-br/cne/pdf/resolucoes-do-cne/ceb/2009/rceb004_09.pdf](https://www.gov.br/mec/pt-br/cne/pdf/resolucoes-do-cne/ceb/2009/rceb004_09.pdf). Acesso em: 28 abr. 2026.
 </ref>

@@ -1509,6 +1509,501 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    body.static-page .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        z-index: 99995;
+    }
+
+    body.static-page .nav-links.active {
+        right: 0;
+    }
+
+    body.static-page .overlay.active {
+        z-index: 99992;
+    }
+
+    body.static-page .menu-toggle {
+        display: flex;
+    }
+}
+
 body.internal .artigo-section {
     padding-top: 140px !important;
+}
+
+body.static-page header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99990;
+    background: #f4efe9;
+}
+
+body.static-page .navbar {
+    position: relative;
+    z-index: 99991;
+}
+
+body.static-page .menu-toggle {
+    position: relative;
+    z-index: 99999;
+}
+
+body.static-page .overlay {
+    z-index: 99992;
+}
+
+body.static-page .nav-links {
+    z-index: 99995;
+}
+
+body.static-page .nav-links.active {
+    z-index: 99995;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+iframe,
+video {
+    max-width: 100%;
+}
+
+body.static-page .site-footer {
+    display: block !important;
+}
+
+body.static-page header,
+body.internal header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f4efe9;
+    z-index: 10000;
+}
+
+body.static-page .menu-toggle,
+body.internal .menu-toggle {
+    z-index: 10003;
+}
+
+body.static-page .nav-links,
+body.internal .nav-links {
+    z-index: 10002;
+}
+
+body.static-page .overlay,
+body.internal .overlay {
+    z-index: 10001;
+}
+
+.artigo-container,
+.artigo-content,
+.artigo-reference,
+.artigo-content p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.artigo-content a,
+.artigo-reference a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.artigo-content h3,
+.artigo-content h4 {
+    color: #0f1147;
+    margin: 0 0 12px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    body.static-page .artigo-section,
+    body.internal .artigo-section {
+        padding-top: 130px !important;
+    }
+
+    .navbar {
+        padding: 16px 24px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(78vw, 320px);
+        max-width: 320px;
+        height: 100vh;
+        background: #f4efe9;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 40px;
+        gap: 25px;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .artigo-header h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .artigo-subtitulo {
+        font-size: 1rem;
+    }
+
+    .artigo-video-bloco {
+        grid-template-columns: 1fr;
+    }
+
+    .artigo-capa {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .navbar {
+        padding: 14px 18px;
+    }
+
+    .logo-img {
+        height: 34px;
+    }
+
+    .artigo-header h1 {
+        font-size: 1.55rem;
+    }
+
+    .artigo-cta {
+        padding: 24px 18px;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+iframe,
+video {
+    max-width: 100%;
+}
+
+body.static-page .site-footer {
+    display: block !important;
+}
+
+.overlay,
+.overlay.active,
+body.static-page .overlay,
+body.static-page .overlay.active,
+body.internal .overlay,
+body.internal .overlay.active {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+body.static-page header,
+body.internal header,
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f4efe9;
+    z-index: 1000;
+}
+
+body.home header {
+    background: transparent;
+}
+
+body.home .nav-links a,
+body.home .menu-toggle {
+    color: #fff;
+}
+
+body.internal .nav-links a,
+body.static-page .nav-links a,
+body.internal .menu-toggle,
+body.static-page .menu-toggle {
+    color: #0f1147;
+}
+
+.artigo-container,
+.artigo-content,
+.artigo-reference,
+.artigo-content p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.artigo-content a,
+.artigo-reference a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.artigo-content h3,
+.artigo-content h4 {
+    color: #0f1147;
+    margin: 0 0 12px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    body.static-page .artigo-section,
+    body.internal .artigo-section,
+    .artigo-section {
+        padding-top: 130px !important;
+    }
+
+    .navbar {
+        padding: 16px 24px;
+    }
+
+    .menu-toggle,
+    body.static-page .menu-toggle,
+    body.internal .menu-toggle {
+        display: flex;
+        position: relative;
+        z-index: 1200;
+        color: #0f1147;
+    }
+
+    body.home .menu-toggle {
+        color: #fff;
+    }
+
+    body.menu-open .menu-toggle,
+    body.home.menu-open .menu-toggle {
+        color: #0f1147;
+    }
+
+    .nav-links,
+    body.static-page .nav-links,
+    body.internal .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(80vw, 320px);
+        max-width: 320px;
+        height: 100vh;
+        background: #f4efe9;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 40px;
+        gap: 25px;
+        transition: right 0.3s ease;
+        z-index: 1100;
+    }
+
+    .nav-links.active,
+    body.static-page .nav-links.active,
+    body.internal .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links.active a,
+    body.home .nav-links.active a,
+    body.internal .nav-links.active a,
+    body.static-page .nav-links.active a {
+        color: #0f1147 !important;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .post-grid,
+    .artigo-video-bloco {
+        grid-template-columns: 1fr;
+    }
+
+    .artigo-header h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .artigo-subtitulo {
+        font-size: 1rem;
+    }
+
+    .artigo-capa {
+        height: 220px;
+    }
+
+    .artigo-meta {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .service-grid,
+    .sobre-grid,
+    .fluxo-grid,
+    .principios-slider {
+        grid-template-columns: 1fr;
+    }
+
+    .services-container {
+        gap: 45px;
+    }
+
+    .service-card.active .service-card-content p,
+    .service-card.active .service-text {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .site-footer {
+        padding: 45px 25px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-info,
+    .footer-certifications {
+        padding: 28px 0;
+        border-bottom: 1px solid rgba(244,239,233,0.2);
+    }
+
+    .footer-brand {
+        padding-top: 0;
+    }
+
+    .footer-certifications {
+        border-bottom: none;
+    }
+
+    .footer-logo {
+        max-width: 190px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .principio-nav {
+        display: none;
+    }
+
+    .principio-card {
+        padding: 24px;
+    }
+
+    .video-placeholder {
+        min-height: 260px;
+    }
+
+    .info-icon::after {
+        position: fixed;
+        left: 50%;
+        right: auto;
+        bottom: 24px;
+        transform: translateX(-50%);
+        width: calc(100vw - 40px);
+        max-width: 320px;
+        padding: 12px 14px;
+        font-size: 0.78rem;
+        line-height: 1.45;
+        text-align: center;
+        z-index: 99999;
+    }
+
+    .whatsapp-float {
+        right: 18px;
+        bottom: 18px;
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .navbar {
+        padding: 14px 18px;
+    }
+
+    .logo-img {
+        height: 34px;
+    }
+
+    .artigo-header h1 {
+        font-size: 1.55rem;
+    }
+
+    .artigo-cta {
+        padding: 24px 18px;
+    }
+}
+
+.artigo-reference a,
+.artigo-link {
+    color: #0f1147;
+    text-decoration: none;
+}
+
+.artigo-link:hover {
+    opacity: 0.7;
 }

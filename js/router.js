@@ -59,9 +59,7 @@ function getCurrentPath() {
 
 export function navigateTo(url) {
     const parsedUrl = new URL(url, window.location.origin);
-    const path = parsedUrl.hash
-        ? parsedUrl.hash.replace("#", "")
-        : parsedUrl.pathname;
+    const path = parsedUrl.pathname;
 
     history.pushState(null, null, path);
     router();

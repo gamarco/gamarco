@@ -3,6 +3,16 @@ const path = require("path");
 const matter = require("gray-matter");
 const { marked } = require("marked");
 
+const renderer = new marked.Renderer();
+
+renderer.link = function(token) {
+    const href = token.href || "";
+    const title = token.title ? ` title="${token.title}"` : "";
+    const text = token.text || href;
+
+    return `<a href="${href}"${title} target="_blank" rel="noopener noreferrer" class="artigo-link">${text}</a>`;
+};
+
 const inputDir = path.join(__dirname, "..", "conteudos-md");
 const partialOutputDir = path.join(__dirname, "..", "pages", "conteudos");
 const templatesDir = path.join(__dirname, "..", "templates");
@@ -94,6 +104,14 @@ function restoreVideoBlocks(html, videos) {
     return html;
 }
 
+function fixExternalLinks(html) {
+    return html.replace(/<a\s+href="(https?:\/\/[^"]+)"([^>]*)>/g, (match, href, rest) => {
+        if (match.includes("target=")) return match;
+
+        return `<a href="${href}"${rest} target="_blank" rel="noopener noreferrer" class="artigo-link">`;
+    });
+}
+
 function buildArticlePartial(data, bodyHtml) {
     const tags = Array.isArray(data.tags) ? data.tags : [];
 
@@ -180,6 +198,7 @@ files.forEach(file => {
 
     let bodyHtml = marked(processedContent);
     bodyHtml = restoreVideoBlocks(bodyHtml, videos);
+    bodyHtml = fixExternalLinks(bodyHtml);
 
     const partialHtml = buildArticlePartial(data, bodyHtml);
 
