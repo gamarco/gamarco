@@ -37,4 +37,6 @@ initMenu();
 
 window.addEventListener("popstate", router);
 
-router();
+if (!document.body.classList.contains("static-page")) {
+    router();
+}

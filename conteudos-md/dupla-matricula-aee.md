@@ -6,7 +6,7 @@ subtitulo: "Entenda sobre a Dupla Matrícula como um direito do estudante com de
 autor: Gamarco
 data: "28 abr. 2026"
 leitura: "10 min"
-capa: assets/images/blog/dupla-matricula-aee.png
+capa: /assets/images/blog/dupla-matricula-aee.png
 alt: Texto alternativo da imagem
 tags:
   - FUNDEB

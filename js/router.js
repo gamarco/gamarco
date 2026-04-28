@@ -85,7 +85,7 @@ export async function router() {
     const footer = document.querySelector("footer");
     const body = document.body;
 
-    body.classList.remove("home", "internal");
+    body.classList.remove("home", "internal", "static-page");
 
     if (path === "/" || path === "/inicio") {
         body.classList.add("home");
