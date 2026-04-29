@@ -287,7 +287,8 @@ body.internal .menu-toggle {
 .form-group i {
     position: absolute;
     left: 14px;
-    color: #999;
+    /* color: #999; */
+    color: #0f1147;
     font-size: 1rem;
 }
 
@@ -312,7 +313,8 @@ body.internal .menu-toggle {
     left: 42px;
     top: 50%;
     transform: translateY(-50%);
-    color: #999;
+    /* color: #999; */
+    color: #0f1147;
     font-size: 0.95rem;
     pointer-events: none;
     transition: all 0.25s ease;

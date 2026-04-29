@@ -1,4 +1,16 @@
-emailjs.init("Vt0QbkAJCWFETCvbW");
+async function loadEmailJS() {
+    return new Promise((resolve) => {
+        if (window.emailjs) {
+            resolve();
+            return;
+        }
+
+        const script = document.createElement("script");
+        script.src = "https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js";
+        script.onload = resolve;
+        document.body.appendChild(script);
+    });
+}
 
 let estados = {};
 let cidades = [];
@@ -118,8 +130,12 @@ export async function initContactForm() {
         });
     });
 
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", async function (e) {
         e.preventDefault();
+
+        await loadEmailJS();
+
+        emailjs.init("Vt0QbkAJCWFETCvbW");
 
         const nome = document.getElementById("nome").value.trim();
         const email = document.getElementById("email").value.trim();

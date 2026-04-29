@@ -59,7 +59,7 @@
         <header>
     <nav class="navbar">
         <div class="logo-container">
-            <a href="/inicio" data-link><img src="/assets/images/logo.png" alt="Gamarco" class="logo-img" loading="lazy" decoding="async"></a>
+            <a href="/inicio" data-link><img src="/assets/images/logo.png" alt="Gamarco" class="logo-img" fetchpriority="high" decoding="async"></a>
         </div>
 
         <div class="menu-toggle" id="menu-toggle">
@@ -174,15 +174,17 @@
     <div class="footer-container">
 
         <div class="footer-brand">
-            <a href="/inicio" data-link><img src="/assets/images/logo.png" alt="Gamarco Educacional" class="footer-logo" decoding="async" decoding="async"></a>
+            <a href="/inicio" data-link><img src="/assets/images/logo.png" alt="Gamarco Educacional" class="footer-logo" decoding="async"></a>
 
             <p>
                 Consultoria que forma, transforma e gera resultados
             </p>
 
             <div class="footer-social">
-                <a href="mailto:gabriel.correa@gamarco.com.br?subject=Contato pelo site Gamarco" target="_blank" aria-label="Email"><i class="bi bi-envelope"></i></a>
                 <a href="https://wa.me/5531984460028?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Gamarco." target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/gamarcoeducacional/" target="_blank" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/gamarcoeducacional" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="mailto:gabriel.correa@gamarco.com.br?subject=Contato pelo site Gamarco" target="_blank" aria-label="Email"><i class="bi bi-envelope"></i></a>
             </div>
         </div>
 
@@ -234,7 +236,7 @@
             <i class="bi bi-whatsapp"></i>
         </a>
 
-        <script type="module" src="/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="module" src="/js/main.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
     </body>
 </html>

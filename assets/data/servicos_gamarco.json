@@ -1,7 +1,7 @@
 [
   {
     "categoria_filtro": "Administrativa",
-    "categoria_completa": "Consultoria Administrativa",
+    "categoria_completa": "Gestão Administrativa",
     "descricao": "Consultoria administrativa para redes e sistemas de ensino",
     "servicos": [
       {
@@ -38,7 +38,7 @@
   },
   {
     "categoria_filtro": "Financeira",
-    "categoria_completa": "Consultoria Financeira",
+    "categoria_completa": "Gestão Financeira",
     "descricao": "Consultoria financeira para redes e sistemas de ensino",
     "servicos": [
       {
@@ -85,7 +85,7 @@
   },
   {
     "categoria_filtro": "Pedagógica",
-    "categoria_completa": "Consultoria Pedagógica",
+    "categoria_completa": "Gestão Pedagógica",
     "descricao": "Consultoria pedagógica para redes e sistemas de ensino",
     "servicos": [
       {
