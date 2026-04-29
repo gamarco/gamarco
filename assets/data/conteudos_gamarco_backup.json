@@ -3,7 +3,7 @@
         "categoria": "Gestão administrativa",
         "titulo": "Censo escolar e financiamento educacional",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/censo-e-financiamento.png",
+        "imagem": "assets/images/blog/censo-e-financiamento.webp",
         "alt": "Censo escolar e financiamento educacional",
         "link": "/censo-e-financiamento"
     },
@@ -11,7 +11,7 @@
         "categoria": "Gestão financeira",
         "titulo": "Dupla matrícula no Atendimento Educacional Especializado (AEE)",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/dupla-matricula-aee.png",
+        "imagem": "assets/images/blog/dupla-matricula-aee.webp",
         "alt": "Dupla matrícula no Atendimento Educacional Especializado (AEE)",
         "link": "/dupla-matricula-aee"
     },
@@ -19,7 +19,7 @@
         "categoria": "Gestão administrativa",
         "titulo": "Gestão administrativa e implicações financeiras para as redes de ensino",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/gestao-administrativa-financeira.png",
+        "imagem": "assets/images/blog/gestao-administrativa-financeira.webp",
         "alt": "Gestão administrativa e implicações financeiras para as redes de ensino",
         "link": "/gestao-administrativa-financeira"
     },
@@ -27,7 +27,7 @@
         "categoria": "Gestão de dados",
         "titulo": "Metodologias de trabalho para a transformação da gestão educacional",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/metodologias-para-transformar-a-gestao.png",
+        "imagem": "assets/images/blog/metodologias-para-transformar-a-gestao.webp",
         "alt": "Metodologias de trabalho para a transformação da gestão educacional",
         "link": "/metodologias-para-transformar-a-gestao"
     },
@@ -35,7 +35,7 @@
         "categoria": "Captação de recursos",
         "titulo": "Novo PAR e as possibilidades para as redes de ensino",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/novo-par.png",
+        "imagem": "assets/images/blog/novo-par.webp",
         "alt": "Novo PAR e as possibilidades para as redes de ensino",
         "link": "/novo-par"
     },
@@ -43,7 +43,7 @@
         "categoria": "Gestão pedagógica",
         "titulo": "Escola em Tempo Integral (ETI) e o Atendimento Educacional Especializado (AEE)",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/eti-e-aee.png",
+        "imagem": "assets/images/blog/eti-e-aee.webp",
         "alt": "Escola em Tempo Integral (ETI) e o Atendimento Educacional Especializado (AEE)",
         "link": "/eti-e-aee"
     },
@@ -51,7 +51,7 @@
         "categoria": "Gestão de dados",
         "titulo": "Dados e indicadores educacionais",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/dados-e-indicadores-educacionais.png",
+        "imagem": "assets/images/blog/dados-e-indicadores-educacionais.webp",
         "alt": "Dados e indicadores educacionais",
         "link": "/dados-e-indicadores-educacionais"
     },
@@ -59,7 +59,7 @@
         "categoria": "Captação de recursos",
         "titulo": "FUNDEB: VAAF, VAAT e VAAR",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/fundeb.png",
+        "imagem": "assets/images/blog/fundeb.webp",
         "alt": "PFUNDEB: VAAF, VAAT e VAAR",
         "link": "/fundeb"
     },
@@ -67,7 +67,7 @@
         "categoria": "Gestão pedagógica",
         "titulo": "Ensino Religioso (ER) e a formação profissional: a realidade mineira",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/ensino-religioso-e-formacao-profissional.png",
+        "imagem": "assets/images/blog/ensino-religioso-e-formacao-profissional.webp",
         "alt": "Ensino Religioso (ER) e a formação profissional: a realidade mineira",
         "link": "/ensino-religioso-e-formacao-profissional"
     },
@@ -75,7 +75,7 @@
         "categoria": "Gestão de dados",
         "titulo": "Como organizar metas, indicadores e ações estratégicas para redes municipais de ensino",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/metas-indicadores-e-acoes-estrategicas.png",
+        "imagem": "assets/images/blog/metas-indicadores-e-acoes-estrategicas.webp",
         "alt": "Como organizar metas, indicadores e ações estratégicas para redes municipais de ensino",
         "link": "/metas-indicadores-e-acoes-estrategicas"
     },
@@ -83,7 +83,7 @@
         "categoria": "Gestão pedagógica",
         "titulo": "Formação dos profissionais da educação para resultados",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/formacao-profissional-para-resultados.png",
+        "imagem": "assets/images/blog/formacao-profissional-para-resultados.webp",
         "alt": "Formação dos profissionais da educação para resultados",
         "link": "/formacao-profissional-para-resultados"
     },
@@ -91,7 +91,7 @@
         "categoria": "Gestão de dados",
         "titulo": "Ferramentas e sistemas complementares para a gestão pública da educação municipal",
         "subtitulo": "...",
-        "imagem": "assets/images/blog/ferramentas-e-sistemas-de-gestao.png",
+        "imagem": "assets/images/blog/ferramentas-e-sistemas-de-gestao.webp",
         "alt": "Ferramentas e sistemas complementares para a gestão pública da educação municipal",
         "link": "/ferramentas-e-sistemas-de-gestao"
     }

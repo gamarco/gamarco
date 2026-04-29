@@ -11,7 +11,7 @@ export async function initServicesPage() {
 
     const filtros = [
         "Todos",
-        ...categorias.map(categoria => categoria.categoria)
+        ...categorias.map(categoria => categoria.categoria_filtro)
     ];
 
     function renderFilters() {
@@ -41,7 +41,7 @@ export async function initServicesPage() {
 
         const categoriasFiltradas = categoriaAtiva === "Todos"
             ? categorias
-            : categorias.filter(categoria => categoria.categoria === categoriaAtiva);
+            : categorias.filter(categoria => categoria.categoria_filtro === categoriaAtiva);
 
         categoriasFiltradas.forEach(categoria => {
             const section = document.createElement("div");
@@ -49,7 +49,7 @@ export async function initServicesPage() {
 
             section.innerHTML = `
                 <div class="service-category-header">
-                    <h3>${categoria.categoria}</h3>
+                    <h3>${categoria.categoria_completa}</h3>
                     <p>${categoria.descricao || ""}</p>
                 </div>
 
@@ -58,7 +58,7 @@ export async function initServicesPage() {
                         <article class="service-card">
 
                             <div class="service-card-image">
-                                <img src="${servico.imagem}" alt="${servico.titulo}">
+                                <img src="${servico.imagem}" title="${servico.titulo}" alt="${servico.titulo}" loading="lazy" decoding="async">
                             </div>
 
                             <div class="service-card-content">

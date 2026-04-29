@@ -6,7 +6,7 @@ subtitulo: "Conheça sobre o Fundo e suas modalidades de complementação, o Val
 autor: Gamarco
 data: "27 abr. 2026"
 leitura: "6 min"
-capa: /assets/images/blog/fundeb.png
+capa: /assets/images/blog/fundeb.webp
 alt: Gestão do Fundeb
 tags:
   - FUNDEB

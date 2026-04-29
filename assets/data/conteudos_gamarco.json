@@ -3,7 +3,7 @@
         "categoria": "Captação de recursos",
         "titulo": "FUNDEB: VAAF, VAAT e VAAR",
         "subtitulo": "Conheça sobre o Fundo e suas modalidades de complementação, o Valor Aluno Ano Fundeb (VAAF), o Valor Aluno Ano Total (VAAT) e o Valor Aluno Ano Resultado (VAAR).",
-        "imagem": "assets/images/blog/fundeb.png",
+        "imagem": "assets/images/blog/fundeb.webp",
         "alt": "FUNDEB: VAAF, VAAT e VAAR",
         "link": "/fundeb"
     },
@@ -11,7 +11,7 @@
         "categoria": "Gestão financeira",
         "titulo": "Dupla matrícula no Atendimento Educacional Especializado (AEE)",
         "subtitulo": "Entenda sobre a Dupla Matrícula como um direito do estudante com deficiência que garante os aportes adequados para a melhoria do Custo Aluno-Qualidade (CAQ).",
-        "imagem": "assets/images/blog/dupla-matricula-aee.png",
+        "imagem": "assets/images/blog/dupla-matricula-aee.webp",
         "alt": "Dupla matrícula no Atendimento Educacional Especializado (AEE)",
         "link": "/dupla-matricula-aee"
     }
