@@ -12,18 +12,8 @@ const routes = {
     "/equipe": "pages/equipe.html",
     "/solucoes": "pages/solucoes.html",
     "/aprenda": "pages/aprenda.html",
-    // "/censo-e-financiamento": "pages/conteudos/censo-e-financiamento.html",
-    // "/dados-e-indicadores-educacionais": "pages/conteudos/dados-e-indicadores-educacionais.html",
     "/dupla-matricula-aee": "pages/conteudos/dupla-matricula-aee.html",
-    // "/ensino-religioso-e-formacao-profissional": "pages/conteudos/ensino-religioso-e-formacao-profissional.html",
-    // "/eti-e-aee": "pages/conteudos/eti-e-aee.html",
-    // "/ferramentas-e-sistemas-de-gestao": "pages/conteudos/ferramentas-e-sistemas-de-gestao.html",
-    // "/formacao-profissional-para-resultados": "pages/conteudos/formacao-profissional-para-resultados.html",
     "/fundeb": "pages/conteudos/fundeb.html",
-    // "/gestao-administrativa-financeira": "pages/conteudos/gestao-administrativa-financeira.html",
-    // "/metas-indicadores-e-acoes-estrategicas": "pages/conteudos/metas-indicadores-e-acoes-estrategicas.html",
-    // "/metodologias-para-transformar-a-gestao": "pages/conteudos/metodologias-para-transformar-a-gestao.html",
-    // "/novo-par": "pages/conteudos/novo-par.html",
     "/contato": "pages/contato.html"
 };
 
@@ -35,19 +25,26 @@ const titles = {
     "/solucoes": "Soluções em Gestão Educacional | Gamarco",
     "/aprenda": "Conteúdos | Gamarco",
     "/contato": "Contato | Gamarco",
-    "/censo-e-financiamento": "Censo Escolar e Financiamento Educacional | Gamarco",
-    "/dados-e-indicadores-educacionais": "Dados e Indicadores Educacionais | Gamarco",
     "/dupla-matricula-aee": "Dupla Matrícula no AEE | Gamarco",
-    "/ensino-religioso-e-formacao-profissional": "Ensino Religioso e Formação Profissional | Gamarco",
-    "/eti-e-aee": "Educação em Tempo Integral e AEE | Gamarco",
-    "/ferramentas-e-sistemas-de-gestao": "Ferramentas e Sistemas de Gestão | Gamarco",
-    "/formacao-profissional-para-resultados": "Formação Profissional para Resultados | Gamarco",
-    "/fundeb": "Conheça o FUNDEB | Gamarco",
-    "/gestao-administrativa-financeira": "Gestão Administrativa e Financeira | Gamarco",
-    "/metas-indicadores-e-acoes-estrategicas": "Metas, Indicadores e Ações Estratégicas | Gamarco",
-    "/metodologias-para-transformar-a-gestao": "Metodologias para Transformar a Gestão | Gamarco",
-    "/novo-par": "Novo PAR | Gamarco"
+    "/fundeb": "Conheça o FUNDEB | Gamarco"
 };
+
+function updateLogos(path) {
+    const logoMenu = document.querySelector(".logo-img");
+    const logoFooter = document.querySelector(".footer-logo");
+
+    const isHome = path === "/" || path === "/inicio";
+
+    if (logoMenu) {
+        logoMenu.src = isHome
+            ? "assets/images/logo_light.webp"
+            : "assets/images/logo_dark.webp";
+    }
+
+    if (logoFooter) {
+        logoFooter.src = "assets/images/logo_light.webp";
+    }
+}
 
 function getCurrentPath() {
     if (window.location.hash) {
@@ -96,6 +93,8 @@ export async function router() {
 
         if (footer) footer.style.display = "block";
     }
+
+    updateLogos(path);
 
     if (path === "/contato") {
         initContactForm();

@@ -284,7 +284,7 @@ body.internal .menu-toggle {
     align-items: center;
 }
 
-.form-group i {
+.form-group i, svg {
     position: absolute;
     left: 14px;
     /* color: #999; */
@@ -707,6 +707,10 @@ body.internal .menu-toggle {
     height: 60px;
     object-fit: contain;
     margin-bottom: 10px;
+}
+
+.fluxo-card i {
+    font-size: 60px;
 }
 
 .fluxo-card h4 {
