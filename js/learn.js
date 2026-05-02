@@ -68,7 +68,7 @@ export async function initAprendaPage() {
             article.classList.add("post-card");
 
             article.innerHTML = `
-                <img src="${post.imagem}" title="${post.alt || post.titulo}" alt="${post.alt || post.titulo}" loading="lazy" decoding="async">
+                <img src="${post.imagem}" title="${post.alt || post.titulo}" alt="${post.alt || post.titulo}" loading="lazy" decoding="async" fetchpriority="high">
 
                 <div class="post-card-content">
                     <span>${post.categoria}</span>

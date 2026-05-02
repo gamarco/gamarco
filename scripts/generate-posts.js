@@ -131,7 +131,7 @@ function buildArticlePartial(data, bodyHtml) {
             </div>
         </div>
 
-        <img class="artigo-capa" src="${data.capa}" title="${data.alt || data.titulo}" alt="${data.alt || data.titulo}" loading="lazy" decoding="async">
+        <img class="artigo-capa" src="${data.capa}" title="${data.alt || data.titulo}" alt="${data.alt || data.titulo}" loading="lazy" decoding="async" fetchpriority="high">
 
         <div class="artigo-content">
             ${bodyHtml}

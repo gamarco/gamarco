@@ -6,7 +6,7 @@ subtitulo: "Subtítulo curto do conteúdo."
 autor: Gamarco
 data: "27 abr. 2026"
 leitura: "5 min"
-capa: assets/images/blog/img_1.png
+capa: /assets/images/blog/img_1.png
 alt: Texto alternativo da imagem
 tags:
   - Tag 1

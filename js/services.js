@@ -58,7 +58,7 @@ export async function initServicesPage() {
                         <article class="service-card">
 
                             <div class="service-card-image">
-                                <img src="${servico.imagem}" title="${servico.titulo}" alt="${servico.titulo}" loading="lazy" decoding="async">
+                                <img src="${servico.imagem}" title="${servico.titulo}" alt="${servico.titulo}" loading="lazy" decoding="async" fetchpriority="high">
                             </div>
 
                             <div class="service-card-content">
