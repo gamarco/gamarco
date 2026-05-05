@@ -764,7 +764,7 @@ body.internal .menu-toggle {
     align-items: stretch;
 }
 
-.video-placeholder {
+/* .video-placeholder {
     height: 100%;
     min-height: 360px;
     border-radius: 18px;
@@ -786,6 +786,62 @@ body.internal .menu-toggle {
 
 .video-placeholder span {
     font-weight: 600;
+} */
+
+.video-placeholder {
+    position: relative;
+    height: 100%;
+    min-height: 360px;
+    border-radius: 18px;
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #0f1147, #23267a);
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: center;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+/* VÍDEO OCUPANDO TODO O ESPAÇO */
+.video-placeholder video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* ÍCONE PLAY */
+.video-placeholder i {
+    font-size: 3.5rem;
+    opacity: 0.9;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* TEXTO */
+.video-placeholder span {
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* QUANDO ATIVO */
+.video-placeholder.active video {
+    opacity: 1;
+}
+
+.video-placeholder.active i,
+.video-placeholder.active span {
+    display: none;
 }
 
 .parcerias-cards {

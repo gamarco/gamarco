@@ -57,3 +57,4 @@ build/
 # Router legado
 # =========================
 router_backup.js
+router_safe_version.js
