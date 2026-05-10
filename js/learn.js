@@ -18,7 +18,7 @@ export async function initAprendaPage() {
 
     let categoriaAtiva = "Todos";
     let paginaAtual = 1;
-    const postsPorPagina = 4;
+    const postsPorPagina = 6;
 
     const categorias = [
         "Todos",
@@ -72,13 +72,38 @@ export async function initAprendaPage() {
 
                 <div class="post-card-content">
                     <span>${post.categoria}</span>
+
                     <h3>${post.titulo}</h3>
-                    <p>${post.subtitulo}</p>
-                    <a href="${post.link}">Ler conteúdo</a>
+
+                    <p class="post-card-description">${post.subtitulo}</p>
+
+                    <div class="post-actions">
+                        <a href="${post.link}" class="post-main-btn">
+                            Explorar conteúdo
+                        </a>
+
+                        <button class="post-share-btn copy" data-copy-link="${post.link}" aria-label="Copiar link do conteúdo">
+                            <i class="bi bi-link-45deg"></i>
+                        </button>
+                    </div>
                 </div>
             `;
 
             postsContainer.appendChild(article);
+        });
+
+        postsContainer.querySelectorAll("[data-copy-link]").forEach(button => {
+            button.addEventListener("click", async () => {
+                const link = new URL(button.dataset.copyLink, window.location.origin).href;
+
+                await navigator.clipboard.writeText(link);
+
+                button.innerHTML = `<i class="bi bi-check2"></i>`;
+
+                setTimeout(() => {
+                    button.innerHTML = `<i class="bi bi-link-45deg"></i>`;
+                }, 1600);
+            });
         });
     }
 

@@ -1,7 +1,7 @@
 ---
 slug: fundeb
 categoria: Financiamento educacional
-titulo: "FUNDEB: VAAF, VAAT e VAAR"
+titulo: "FUNDEB e suas complementações: VAAF, VAAT e VAAR"
 subtitulo: "Conheça sobre o Fundo e suas modalidades de complementação, o Valor Aluno Ano Fundeb (VAAF), o Valor Aluno Ano Total (VAAT) e o Valor Aluno Ano Resultado (VAAR)."
 autor: Gamarco
 data: "27 abr. 2026"

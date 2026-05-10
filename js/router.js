@@ -4,6 +4,7 @@ import { initServicesPage } from "./services.js";
 import { initSobrePage } from "./about.js";
 import { initVideoGamarco } from "./video.js";
 import { initAprendaPage } from "./learn.js";
+import { initEventsPage } from "./events.js";
 import { initEquipePage } from "./team.js";
 
 const BASE_URL = "https://www.gamarco.com.br";
@@ -14,7 +15,7 @@ const routes = {
     "/gamarco": "pages/gamarco.html",
     "/equipe": "pages/equipe.html",
     "/solucoes": "pages/solucoes.html",
-    "/aprenda": "pages/aprenda.html",
+    "/gamarco-plus": "pages/gamarco-plus.html",
     "/dupla-matricula-aee": "pages/conteudos/dupla-matricula-aee.html",
     "/fundeb": "pages/conteudos/fundeb.html",
     "/contato": "pages/contato.html"
@@ -26,7 +27,7 @@ const titles = {
     "/gamarco": "Sobre | Gamarco",
     "/equipe": "Equipe | Gamarco",
     "/solucoes": "Soluções em Gestão Educacional | Gamarco",
-    "/aprenda": "Conteúdos | Gamarco",
+    "/gamarco-plus": "Gamarco+ | Conheça nossos conteúdos e formações",
     "/contato": "Contato | Gamarco",
     "/dupla-matricula-aee": "Dupla Matrícula no AEE | Gamarco",
     "/fundeb": "Conheça o FUNDEB | Gamarco"
@@ -38,7 +39,7 @@ const descriptions = {
     "/gamarco": "Conheça a Gamarco Educacional, consultoria especializada em gestão pública educacional baseada em evidências.",
     "/equipe": "Conheça a equipe técnica da Gamarco Educacional e sua atuação em gestão, planejamento, dados e políticas educacionais.",
     "/solucoes": "Soluções em consultoria administrativa, financeira, pedagógica, organizacional e formativa para redes municipais de educação.",
-    "/aprenda": "Conteúdos técnicos da Gamarco sobre FUNDEB, planejamento educacional, AEE, gestão pública e políticas educacionais.",
+    "/gamarco-plus": "Conteúdos técnicos e formações da Gamarco sobre FUNDEB, planejamento educacional, AEE, gestão pública e políticas educacionais.",
     "/contato": "Entre em contato com a Gamarco Educacional para conhecer soluções em consultoria para redes municipais de ensino.",
     "/dupla-matricula-aee": "Entenda sobre a Dupla Matrícula como um direito do estudante com deficiência, matriculado ou não na Educação Especial, que garante os aportes adequados para a melhoria do Custo Aluno-Qualidade (CAQ) no Atendimento Educacional Especializado (AEE).",
     "/fundeb": "Conheça o FUNDEB, critérios de distribuição, impactos na gestão da educação municipal e suas complementações: Conheça sobre o Fundo e suas modalidades de complementação, o Valor Aluno Ano Fundeb (VAAF), o Valor Aluno Ano Total (VAAT) e o Valor Aluno Ano Resultado (VAAR)."
@@ -190,7 +191,8 @@ export async function router() {
         initEquipePage();
     }
 
-    if (path === "/aprenda") {
+    if (path === "/gamarco-plus") {
+        initEventsPage();
         initAprendaPage();
     }
 

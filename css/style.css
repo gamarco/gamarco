@@ -113,7 +113,20 @@ body.internal .nav-links a {
     width: 25px;
     height: 3px;
     background: currentColor;
-    transition: 0.3s;
+    transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+    transform-origin: center;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -5px);
 }
 
 body.home .menu-toggle {
@@ -121,6 +134,10 @@ body.home .menu-toggle {
 }
 
 body.internal .menu-toggle {
+    color: #0f1147;
+}
+
+.menu-toggle.active {
     color: #0f1147;
 }
 
@@ -1080,11 +1097,11 @@ footer {
 
 .post-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
 }
 
-.post-card {
+/* .post-card {
     background: #fff;
     border-radius: 18px;
     overflow: hidden;
@@ -1093,8 +1110,10 @@ footer {
 
 .post-card img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    display: block;
 }
 
 .post-card-content {
@@ -1125,6 +1144,141 @@ footer {
     color: #0f1147;
     font-weight: 700;
     text-decoration: none;
+}
+
+.post-card-content a:hover {
+    opacity: 0.60;
+} */
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card img {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    display: block;
+}
+
+.post-card-content {
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.post-card-content span,
+.artigo-categoria {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0f1147;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-card-content h3 {
+    margin-bottom: 10px;
+    color: #0f1147;
+}
+
+.post-card-content p {
+    margin-bottom: 16px;
+}
+
+.post-card-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: auto;
+    padding-top: 18px;
+}
+
+.post-main-btn,
+.post-share-btn {
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        opacity 0.25s ease,
+        background 0.25s ease;
+}
+
+.post-main-btn {
+    padding: 10px 16px;
+    background: #0f1147;
+    color: #fff !important;
+}
+
+.post-share-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border: none;
+    background: #0f1147;
+    color: #fff !important;
+
+    font-size: 1.25rem;
+}
+
+.post-share-btn i {
+    line-height: 1;
+}
+
+.post-share-btn.copy i {
+    font-size: 1.35rem;
+}
+
+.post-main-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(15,17,71,0.18);
+    opacity: 0.96;
+}
+
+.post-share-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+}
+
+.post-main-btn:active,
+.post-share-btn:active {
+    transform: scale(0.96);
 }
 
 .artigo-header {
@@ -1344,6 +1498,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .post-actions {
+        flex-direction: row;
+    }
+
+    .post-main-btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .post-share-btn {
+        flex: 0 0 40px;
+    }
+
     .artigo-section {
         padding-top: 70px;
     }
@@ -1591,6 +1758,203 @@ footer {
 
     body.static-page .menu-toggle {
         display: flex;
+    }
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.event-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0 0 32px;
+}
+
+.event-filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-filter-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #0f1147;
+}
+
+.event-filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.event-filter-btn {
+    border: 1px solid rgba(15,17,71,0.18);
+    background: #fff;
+    color: #0f1147;
+
+    padding: 10px 14px;
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.event-filter-btn:hover {
+    background: rgba(15,17,71,0.06);
+}
+
+.event-filter-btn.active {
+    background: #0f1147;
+    color: #fff;
+    border-color: #0f1147;
+}
+
+.event-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.event-main-btn,
+.event-share-btn {
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-main-btn {
+    padding: 10px 16px;
+    background: #0f1147;
+    color: #fff !important;
+}
+
+.event-share-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border: none;
+    color: #fff !important;
+
+    font-size: 1.25rem;
+}
+
+.event-share-btn i {
+    line-height: 1;
+}
+
+.event-share-btn.whatsapp {
+    background: #25D366;
+}
+
+.event-share-btn.linkedin {
+    background: #0A66C2;
+}
+
+.event-share-btn.copy {
+    background: #0f1147;
+}
+
+.event-main-btn,
+.event-share-btn {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        opacity 0.25s ease,
+        background 0.25s ease;
+}
+
+.event-main-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(15,17,71,0.18);
+
+    opacity: 0.96;
+}
+
+.event-share-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.16);
+}
+
+.event-main-btn:active,
+.event-share-btn:active {
+    transform: scale(0.96);
+}
+
+/* .event-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+    display: block;
+} */
+
+.event-card img {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    display: block;
+}
+
+.event-empty {
+    color: #0f1147;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 20px 0 48px;
+}
+
+.event-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 36px 0 56px;
+}
+
+@media (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-filters {
+        flex-direction: column;
+    }
+
+    .event-filter-options {
+        gap: 8px;
+    }
+
+    .event-actions {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .event-main-btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .event-share-btn {
+        flex: 0 0 40px;
     }
 }
 
@@ -1892,16 +2256,19 @@ body.static-page .menu-toggle {
         position: fixed;
         top: 0;
         right: -100%;
-        width: min(80vw, 320px);
-        max-width: 320px;
+        /* width: min(80vw, 320px);
+        max-width: 320px; */
+        width: 100vw;
+        max-width: 100vw;
         height: 100vh;
         background: #f4efe9;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         padding: 40px;
-        gap: 25px;
+        /* gap: 25px; */
+        gap: 40px;
         transition: right 0.3s ease;
         z-index: 1100;
     }
@@ -1917,7 +2284,8 @@ body.static-page .menu-toggle {
     body.internal .nav-links.active a,
     body.static-page .nav-links.active a {
         color: #0f1147 !important;
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
+        font-size: 1.5em;
         font-weight: 600;
     }
 
