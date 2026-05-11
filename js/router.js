@@ -11,14 +11,14 @@ const BASE_URL = "https://www.gamarco.com.br";
 
 const routes = {
     "/": "pages/inicio.html",
-    "/inicio": "pages/inicio.html",
-    "/gamarco": "pages/gamarco.html",
-    "/equipe": "pages/equipe.html",
-    "/solucoes": "pages/solucoes.html",
-    "/gamarco-plus": "pages/gamarco-plus.html",
-    "/dupla-matricula-aee": "pages/conteudos/dupla-matricula-aee.html",
-    "/fundeb": "pages/conteudos/fundeb.html",
-    "/contato": "pages/contato.html"
+    "/inicio": "/pages/inicio.html",
+    "/gamarco": "/pages/gamarco.html",
+    "/equipe": "/pages/equipe.html",
+    "/solucoes": "/pages/solucoes.html",
+    "/gamarco-plus": "/pages/gamarco-plus.html",
+    "/dupla-matricula-aee": "/pages/conteudos/dupla-matricula-aee.html",
+    "/fundeb": "/pages/conteudos/fundeb.html",
+    "/contato": "/pages/contato.html"
 };
 
 const titles = {
