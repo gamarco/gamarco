@@ -106,7 +106,7 @@ body.internal .nav-links a {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    z-index: 1100;
+    z-index: 1300;
 }
 
 .menu-toggle span {
@@ -1623,7 +1623,7 @@ footer {
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
-        z-index: 1040;
+        z-index: 1100;
     }
 
     .overlay.active {
@@ -1976,19 +1976,6 @@ body.static-page .navbar {
     z-index: 99991;
 }
 
-body.static-page .menu-toggle {
-    position: relative;
-    z-index: 99999;
-}
-
-body.static-page .overlay {
-    z-index: 99992;
-}
-
-body.static-page .nav-links {
-    z-index: 99995;
-}
-
 body.static-page .nav-links.active {
     z-index: 99995;
 }
@@ -2314,6 +2301,17 @@ body.static-page .menu-toggle {
 
     .form-row {
         flex-direction: column;
+    }
+
+    body.static-page.menu-open .menu-toggle,
+    body.internal.menu-open .menu-toggle,
+    body.menu-open .menu-toggle {
+        position: fixed;
+        top: 24px;
+        right: 24px;
+        z-index: 99999;
+        color: #0f1147 !important;
+        pointer-events: auto;
     }
 }
 

@@ -73,7 +73,9 @@ function initMenu() {
     });
 }
 
-initMenu();
+document.addEventListener("DOMContentLoaded", () => {
+    initMenu();
+});
 
 window.addEventListener("popstate", router);
 
